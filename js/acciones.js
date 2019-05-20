@@ -1,14 +1,14 @@
 // JavaScript Document
 
 $(document).ready(function (e){
-	document.addEventListener ("deviceready",onDeviceReady,false);
+	document.addEventListener("deviceready",onDeviceReady,false);
 	
 });
   
   function onDeviceReady(){
 	  
 	  $('#posicion').on('click',function(){
-		  getPosition ();
+		  getPosition();
 	  });
 	  }
 	  
@@ -18,7 +18,7 @@ $(document).ready(function (e){
 		  maximumAge: 3600000
 		  }
 	
-	  var watchID=navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
+	  var watchID=navigator.geolocation.getCurrentPosition(onSuccess,onError,options);
 	
 	function onSuccess(position){
 		
