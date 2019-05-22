@@ -23,11 +23,11 @@
    <button onclick="cargarmap()">Cargar mapa</button>
    <script type="text/javascript">
        var x=document.getElementById("demo");
-	   function cargarmapa(){
+	   function cargarmap(){
 		   navigator.geolocation.getCurrentPosition(showPosition,showError);
 		   function showPosition(position)
 		   {
-			   lat0position.coords.latitude;
+			   lat=position.coords.latitude;
 			   lon=position.coords.longitude;
 			   latlon=new google.maps.LatLng(lat,lon)
 			   mapholder=document.getElementById('mapholder')
